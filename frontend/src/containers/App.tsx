@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage.tsx";
 import Dashboard from "../pages/Dashboard/Dashboard.tsx";
 import Restaurant from "../pages/Restaurant/Restaurant.tsx";
