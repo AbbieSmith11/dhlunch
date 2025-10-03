@@ -1,0 +1,28 @@
+@use "../../sass/variables";
+@use "../../sass/mixins";
+// mixins are being weird, will explore implementing them properly when have access to repo.
+
+
+// section (tried using classname but it didnt like it)
+section {
+    width: 100vw;
+    background: linear-gradient(
+        to bottom right,
+        #39B2AB,
+        #2A1B6A
+    );
+    color: white;
+}
+
+// heading
+section h2 {
+    padding-top: 3vh;
+    @include mixins.regular;
+    margin: 0
+}
+
+// subheading
+section h3 {
+    @include mixins.light;
+    padding-bottom: 8vh;
+}
