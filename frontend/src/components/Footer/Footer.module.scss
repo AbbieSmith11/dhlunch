@@ -1,0 +1,12 @@
+@use "../../sass/mixins";
+
+footer {
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    justify-items: center;
+    width: 100vw;
+    border-top: 1px solid rgba(0,0,0,.06);
+    @include mixins.regular;
+    font-size: 0.7rem;
+}

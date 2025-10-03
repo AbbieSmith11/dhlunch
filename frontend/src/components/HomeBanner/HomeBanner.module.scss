@@ -12,6 +12,7 @@ section {
         #2A1B6A
     );
     color: white;
+    padding: 0 2rem;
 }
 
 // heading
@@ -25,4 +26,6 @@ section h2 {
 section h3 {
     @include mixins.light;
     padding-bottom: 8vh;
+    padding-top: 2vh;
+    margin: 0;
 }
