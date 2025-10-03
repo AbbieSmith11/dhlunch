@@ -1,11 +1,19 @@
+// import css variables
+@use "../../sass/mixins";
+@use "../../sass/variables";
+
 // main nav component
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 2rem;
+  padding: 15px 2rem;
   box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.25);
+}
+
+nav h1 {
+    @include mixins.regular;
 }
 
 // div that contains the links
@@ -21,4 +29,5 @@ nav div {
 nav div a {
   color: black;
   text-decoration: none;
+  @include mixins.light;
 }

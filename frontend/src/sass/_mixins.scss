@@ -1,0 +1,17 @@
+// font weights
+
+@mixin semibold {
+    font-weight: 600;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin light {
+    font-weight: 300;
+}
