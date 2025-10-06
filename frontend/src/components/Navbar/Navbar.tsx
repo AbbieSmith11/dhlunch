@@ -1,14 +1,30 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
+import { NavLink } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-
   return (
     <nav>
       <h1>dhLunch</h1>
       <div>
-        <a href="/" className={styles.navLink}>HOME</a>
-        <a href="/dashboard" className={styles.navLink}>MY DASHBOARD</a>
+        <NavLink
+          to="/"
+          end
+          className={({ isActive }) =>
+            isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+          }
+        >
+          HOME
+        </NavLink>
+
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) =>
+            isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
+          }
+        >
+          MY DASHBOARD
+        </NavLink>
       </div>
     </nav>
   );

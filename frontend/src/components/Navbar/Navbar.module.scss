@@ -16,6 +16,7 @@ nav {
   background-color: white;
 }
 
+// logo
 nav h1 {
   @include mixins.light-regular;
   padding-bottom: 1px;
@@ -32,7 +33,7 @@ nav div {
 }
 
 // link text
-nav div a {
+.navLink {
   color: black;
   text-decoration: none;
   @include mixins.light-regular;
@@ -62,4 +63,9 @@ nav div a {
       transform: scaleX(1);
     }
   }
+}
+
+// navlinks styling when on that link
+.active {
+    @include mixins.regular;
 }
