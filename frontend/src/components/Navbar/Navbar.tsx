@@ -1,13 +1,16 @@
 import React from "react";
-import "./Navbar.module.scss";
+import styles from "./Navbar.module.scss";
+import useState from "react";
+
 
 const Navbar: React.FC = () => {
+
   return (
     <nav>
       <h1>dhLunch</h1>
       <div>
-        <a href="/">Home</a>
-        <a href="/dashboard">My Dashboard</a>
+        <a href="/" className={styles.navLink}>HOME</a>
+        <a href="/dashboard" className={styles.navLink}>MY DASHBOARD</a>
       </div>
     </nav>
   );
