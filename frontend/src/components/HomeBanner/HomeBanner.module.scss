@@ -16,16 +16,18 @@
 }
 
 // heading
-section h2 {
-    padding-top: 3vh;
-    @include mixins.regular;
-    margin: 0
+.fadeBackground h2 {
+    padding-top: 8vh;
+    @include mixins.medium;
+    margin: 0;
+    font-size: 3rem;
 }
 
 // subheading
 section h3 {
     @include mixins.light;
-    padding-bottom: 8vh;
+    padding-bottom: 18vh;
     padding-top: 2vh;
     margin: 0;
+    font-size: 1.5rem;
 }
