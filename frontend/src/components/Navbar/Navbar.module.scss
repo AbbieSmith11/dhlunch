@@ -8,7 +8,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 2rem;
+  padding: 0rem 2rem;
   box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.25);
   z-index: 100;
   position: sticky;
@@ -17,8 +17,9 @@ nav {
 }
 
 nav h1 {
-    @include mixins.regular;
-    padding-bottom: 1px;
+  @include mixins.light-regular;
+  padding-bottom: 1px;
+  font-size: 1.8rem;
 }
 
 // div that contains the links
@@ -34,13 +35,12 @@ nav div {
 nav div a {
   color: black;
   text-decoration: none;
- font-weight: 350;
+  @include mixins.light-regular;
   font-size: 1rem;
 
   position: relative;
   display: inline-block;
   padding-bottom: 1px;
-  transition: color 0.3s ease;
 
   &::after {
     content: "";
@@ -59,10 +59,7 @@ nav div a {
     color: black;
 
     &::after {
-        transform: scaleX(1);
+      transform: scaleX(1);
     }
   }
-
 }
-
-

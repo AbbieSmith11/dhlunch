@@ -12,6 +12,11 @@
     font-weight: 400;
 }
 
+// added this as it looked better than regular or light for some elements
+@mixin light-regular {
+    font-weight: 350;
+}
+
 @mixin light {
     font-weight: 300;
 }
