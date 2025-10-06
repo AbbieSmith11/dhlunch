@@ -32,7 +32,7 @@ const Filter: React.FC = () => {
           onClick={() => setOpen((prev) => !prev)}
         >
           <div className={styles.filter}>Filter</div>
-          <div className={styles.arrow}>↓</div>
+          <div className={styles.arrow} style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)"}}>↓</div>
         </div>
       </section>
       {open && (
