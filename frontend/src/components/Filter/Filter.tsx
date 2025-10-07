@@ -1,48 +1,34 @@
-import styles from "./Filter.module.scss";
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import DropdownMenu from "./DropdownMenu/DropdownMenu.tsx";
+import styles from "./Filter.module.scss";
+import RatingFilter from "./RatingFilter/RatingFilter.tsx";
 
 const Filter: React.FC = () => {
-  // state for opening filter
-  const [open, setOpen] = useState(false);
-
-  const ref = useRef<HTMLDivElement>(null);
-
-  // closes filter menu when user clicks elsewhere on page
-  useEffect(() => {
-    const close = (event: MouseEvent) => {
-      if (ref.current && !ref.current.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener("click", close);
-
-    return () => {
-      document.removeEventListener("click", close);
-    };
-  }, []);
-
   return (
-    <>
-      <section className={styles.filterSection}>
-        <div
-          className={styles.filterContainer}
-          ref={ref}
-          onClick={() => setOpen((prev) => !prev)}
-        >
-          <div className={styles.filter}>Filter</div>
-          <div className={styles.arrow} style={{ transform: open ? "rotate(180deg)" : "rotate(0deg)"}}>↓</div>
-        </div>
-      </section>
-      {open && (
-        <div>
-          <ul>
-            <li></li>
-          </ul>
-        </div>
-      )}
-    </>
+    <DropdownMenu
+      isFilter={true}
+      name="filter"
+      list={
+        <>
+        <li>
+        <DropdownMenu // sort dropdown menu
+          name="Sort by"
+          isFilter={false}
+          list={
+            <>
+          <li className={styles.sortListItem} >Distance</li>
+          <li className={styles.sortListItem} >Price(Asc)</li>
+          <li className={styles.sortListItem} >Price(Desc)</li>
+          </>
+        }
+        />
+        </li>
+        <li>
+            <RatingFilter />
+        </li>
+        </>
+      }
+    />
   );
 };
 

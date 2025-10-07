@@ -3,3 +3,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+ul{
+   display: block; 
+   margin: 0;
+   padding: 1rem;
+}
+
+  li {
+    display: block;
+    list-style-type: none;
+  }
