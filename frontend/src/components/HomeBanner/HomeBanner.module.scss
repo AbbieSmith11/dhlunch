@@ -5,7 +5,7 @@
 
 // section (tried using classname but it didnt like it)
 .fadeBackground {
-    width: 100vw;
+    max-width: 100vw;
     background: linear-gradient(
         to bottom right,
         #39B2AB,
@@ -24,7 +24,7 @@
 }
 
 // subheading
-section h3 {
+.fadeBackground h3 {
     @include mixins.light;
     padding-bottom: 18vh;
     padding-top: 2vh;

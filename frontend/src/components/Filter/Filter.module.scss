@@ -1,24 +1,10 @@
-.filterSection {
-  width: 100%;
-  border-bottom: 1.5px solid #c7c7c7;
-}
+@use "../../sass/mixins";
 
-.filterContainer {
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-  border: 2px solid;
-  width: fit-content;
-  border-radius: 3px;
-  letter-spacing: 0.5px;
-  width: 10vw;
-  display: flex;
-  justify-content: space-between;
-
-  &:hover {
+.sortListItem {
+    padding-bottom: 1rem;
     cursor: pointer;
-  }
-}
 
-.arrow {
-    transition: transform 0.3s ease;
+    &:hover {
+        @include mixins.medium;
+    }
 }

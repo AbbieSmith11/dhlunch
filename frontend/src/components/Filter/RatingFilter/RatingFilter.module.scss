@@ -1,0 +1,24 @@
+@use "../../../sass/mixins";
+
+.rating {
+    @include mixins.regular;
+    font-size: 1.3rem;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.ratingList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.ratingList li {
+    max-width: fit-content;
+}
+
+.ratingContainer {
+    gap: 1rem;
+    max-width: fit-content;
+}
