@@ -29,12 +29,12 @@
     font-size: 1.5rem;
 
     &:hover {
-        @include mixins.light;
+        @include mixins.light-regular;
     }
 }
 
 .active {
-    @include mixins.light;
+    @include mixins.light-regular;
 }
 
 #firstContainer {
