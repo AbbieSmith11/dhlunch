@@ -20,3 +20,11 @@
 @mixin light {
     font-weight: 300;
 }
+
+@mixin extra-light {
+    font-weight: 200;
+}
+
+@mixin thin {
+    font-weight: 100;
+}

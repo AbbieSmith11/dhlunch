@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         </NavLink>
 
         <NavLink
-          to="/dashboard"
+          to="/dashboard/myrestaurants"
           className={({ isActive }) =>
             isActive ? `${styles.navLink} ${styles.active}` : styles.navLink
           }

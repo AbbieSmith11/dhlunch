@@ -1,0 +1,42 @@
+@use "../../sass/mixins";
+
+.fadeBackground {
+    max-width: 100vw;
+    background: linear-gradient(
+        to bottom right,
+        #39B2AB,
+        #2A1B6A
+    );
+    color: white;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.dashboardLinkContainers {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardLink {
+    color: white;
+    text-decoration: none;
+    @include mixins.thin;
+    font-size: 1.5rem;
+
+    &:hover {
+        @include mixins.light-regular;
+    }
+}
+
+.active {
+    @include mixins.light-regular;
+}
+
+#firstContainer {
+    border-right: 2px solid white;
+}
