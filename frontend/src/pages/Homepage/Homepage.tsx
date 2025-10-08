@@ -10,7 +10,7 @@ export default function Homepage (){
             <Navbar />
             <HomeBanner />
             <Filter />
-            <RestaurantSummary  name="Viet Shack" image="s" rating={2} />
+            <RestaurantSummary  name="Viet Shack" image="https://www.vietshackrestaurant.co.uk/images/gallery-vietshack-00007_thumbnail.avif" rating={5} />
             <Footer />
         </>
     )
