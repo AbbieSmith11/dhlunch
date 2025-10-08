@@ -1,0 +1,66 @@
+.restaurantSummarySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+// main container
+.RestaurantSummaryContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  padding: 1rem;
+  height: 30vh;
+  background-color: white;
+  max-width: 75vw;
+  margin: 2rem 0;
+}
+
+// containers inside main container
+.infoContainers {
+  display: flex;
+  height: 30vh;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  overflow: hidden;
+}
+
+.infoContainers h6 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.infoContainers img {
+  overflow: hidden;
+  height: 30vh;
+}
+
+#starContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-left: 1.5px solid black;
+  height: 20vh;
+  width: 100%;
+}
+
+#starContainer h6 {
+  margin: 0;
+  font-weight: semi-bold;
+  font-size: 1.5rem;
+}
+
+.bookmarkButtonContainer {
+  display: flex;
+  height: 100%;
+}
+
+.bookmarkButton {
+  height: fit-content;
+  font-size: 1.5rem;
+  border: none;
+}
